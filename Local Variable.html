@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Local Variable</h1>
+</head>
+<body>
+	<p> A local variable can only be accessed fom within the function</p>
+	<input type="button"onclick="cal_fun1();"value="Function 1">
+	<input type="button"onclick="cal_fun2();"value="Function 2">
+		<script>
+		function cal_fun1() {
+			var carname = "bus";
+			alert(typeof(carname));
+		}
+		function cal_fun2() {
+			alert(typeof(carname));
+		}
+	</script>
+</body>
+</html>

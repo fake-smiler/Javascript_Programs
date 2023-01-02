@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Auto Global Variable</h1>
+</head>
+<body>
+	<p>If you not assign var the variable is automatically converted to global variable</p>
+	<input type="button"onclick="cal_fun1();"value="Function 1">
+	<input type="button"onclick="cal_fun2();"value="Function 2">
+	<script>
+		function cal_fun1() {
+			carname="bus";
+			alert(typeof(carname));
+		}
+		function cal_fun2() {
+			alert(typeof(carname));
+		}
+	</script>
+</body>
+</html>

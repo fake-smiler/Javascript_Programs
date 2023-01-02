@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Find Your Device</h1>
+</head>
+<body>
+	<input type="button"onclick="find_dev();"value="Your Device">
+	<script>
+		function find_dev() {
+			var UA=navigator.userAgent.toLowerCase();
+
+			if(UA.indexOf("Android")>-1){
+				alert("This is Android device");
+			}
+		}
+		else if(UA.indexOf("firefox")>-1){
+			alert("This is Firefox browser");
+		}
+
+	else if(UA.indexOf("Chrome")>-1){
+		aler("This is Chrome");
+	}
+
+	else if (UA.indexOf("windows7")>-1) {
+		alert("This is Windows Device");
+	}
+	</script>

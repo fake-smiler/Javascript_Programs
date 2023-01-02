@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial=1">
+	<h1>Data Types And Readings</h1>
+</head>
+<body>
+	<input type="button"onclick="cal_data();"value="Data">
+	<div id="d1"></div>
+	<div id="d2"></div>
+	<div id="d3"></div>
+	<div id="d4"></div>
+	<script>
+		function cal_data() {
+			var num = 1200;
+			var str = "Sample Program";
+			var ar = ["Apple","Bannana","Orange"];
+			var obj = {
+				city:"Thiruporur",
+				place:"Venbedu",
+				country:"India"
+			};
+
+			document.getElementById('d1').innerHTML = num;
+			document.getElementById('d2').innerHTML = str;
+
+			document.getElementById('d3').innerHTML = ar[0] + "," + ar[1] + "," + ar[2] + ".";
+			document.getElementById('d4').innerHTML = obj.city + "," + obj.place + "," + obj.country + ".";
+		}
+	</script>
+</body>
+</html>

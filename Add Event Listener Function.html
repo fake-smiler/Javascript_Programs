@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>addEventListener function</title>
+<body>
+	<h1>addEventListener Function</h1>
+	<input id="btnid1"type="button"value="Button1">
+	<input id="btnid2"type="button"value="Button2">
+	<script>
+		var btn1=document.getElementById("btnid1");
+		var btn2=document.getElementById("btnid2");
+		btn1.addEventListener("click",fun_name,false)
+		btn2.addEventListener("click",function()
+		{
+			alert("Call Function Definition Directly");
+		},false)
+		function fun_name()
+		{
+		alert("Function Called");
+	}
+</script>
+</body>
+</html>

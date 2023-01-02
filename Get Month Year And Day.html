@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Get Month Year And Day</h1>
+	<p>We can get separate the new Date()</p>
+</head>
+<body>
+	<input type="button"onclick="get_date();"value="Get Dates">
+	<div id="d1"></div>
+	<script>
+		function get_date() {
+			var today = new Date();
+
+			var day = today.getDate();
+			var month = today.getMonth() + 1;
+			var year = today.getFullYear();
+
+			alert("Day:" + day);
+			alert("Month:" + month);
+			alert("Year:" + year);
+		}
+	</script>
+</body>
+</html>

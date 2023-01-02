@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Get Radio button value using name</h1>
+</head>
+<body>
+	<lable><input type="radio"name="gndr"value="1">Male</lable>
+	<lable><input type="radio"name="gndr"value="2">Female</lable>
+	<br>
+	<input type="button"onclick="chck_ans();"value="Check">
+<script>
+	function chck_ans() {
+		var val=document.querySelector('input[name="gndr"]:checked').value;
+		alert(val);
+	}
+</script>
+</body>
+</html>

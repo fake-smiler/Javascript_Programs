@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h1>Local Stoarge Get and Set</h1>
+	<input type="text"id="txt1"><br>
+	<button onclick="set();">Set LocalStorage Value</button>
+	<br>
+	<br>
+	<button onclick="get();">Get LocalStorage Value</button>
+	<br>
+	<br>
+	<button onclick="del();">Remove LocalStorage Value</button>
+	<script>
+		function set() {
+			var t1=document.getElementById('txt1').value;
+			localStorage.setItem('key1',t1);
+		}
+
+		function get() {
+			var lv=localStorage.getItem('key1');
+			alert(lv);
+		}
+
+		function del() {
+			var lv=localStorage.removeItem('key1');
+			alert(lv);
+		}
+	</script>
+</body>
+</html>

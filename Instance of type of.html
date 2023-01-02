@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Type of Instance of</h1>
+</head>
+<script>
+	var ar=["1","2","3","4"];
+	function fun_1() {
+		
+		alert(typeof ar);
+	}
+	function fun_2() {
+		var br=["1","2","3","4"];
+		var st="fdshnfkdfkjlk";
+		alert("is String?: " +(ar instanceof Array).toString());
+		alert("is Array?: " + (st instanceof String).toString());
+	}
+</script>
+<body>
+<input type="button"onclick="fun_1();"value="Type Of">
+<input type="button"onclick="fun_2();"value="Instance Of">
+</body>
+</html>
+
+
+

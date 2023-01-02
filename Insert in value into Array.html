@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Actual Array Value :</h1>
+	<h2>var ar=[10,20]</h2>
+</head>
+<body>
+	<input type="button"onclick="ar_fun();"value="Array">
+	<script>
+		function ar_fun() {
+			var ar=[10,20];
+			alert("First : " + ar);
+
+			ar.push(30);
+			alert("push(30) Inserted Last : " + ar);
+
+			ar.unshift(5);
+			alert("unshift(5) Inserted First : " + ar);
+
+			ar[1]=100;
+			alert("ar[1]=100 Replace To First Index : " + ar);
+		}
+	</script>
+</body>
+</html>

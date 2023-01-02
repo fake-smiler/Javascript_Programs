@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Simple Condition</h1>
+</head>
+<body>
+	<input type="button"onclick="simple_chck();"value="Simple Validate">
+	<input type="button"onclick="diffi_chck();"value="Difficult Validate">
+	<script>
+		function simple_chck() {
+			var num=4;
+			if([1,2,3,4,5,6,7,8,9].indexOf(num)!=-1) {
+				alert("This is the number");
+			}
+		}
+
+		function diffi_chck() {
+			var num=4;
+			if(num == 1 || num == 2 || num == 3 || num == 4 || num == 5 || num == 6 || num == 7 || num == 8 || num == 9) {
+				alert("This is the number");
+			}
+		}
+	</script>
+</body>
+</html>
+

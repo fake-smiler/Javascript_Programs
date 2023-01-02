@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Diffrent Between Let And Var</h1>
+</head>
+<body>
+	<input type="button"onclick="call_var();"value="Call Var">
+	<input type="button"onclick="call_let();"value="Call Let">
+	<script>
+		function call_var() {
+			for(var i=0;i<3;i++) {
+				alert(i);//0,1,2
+			}
+			alert(i);//3
+		}
+
+		function call_let() {
+			for(let j=0;j<3;j++) {
+				alert(j);//0,1,2
+			}
+			alert(j);//ReferenceError
+		}
+	</script>
+</body>
+</html>

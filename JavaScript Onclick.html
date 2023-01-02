@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>JavaScript Onclick</title>
+<body>
+	<h1>JavaScript Onclick</h1>
+	<input id="btnid1"type="button"value="Button1">
+	<input id="btnid2"type="button"value="Button2">
+	<script>
+		var btn1=document.getElementById("btnid1");
+		var btn2=document.getElementById("btnid2");
+		btn1.onclick=fun_name;
+			btn2.onclick=function(){
+				alert("Call Function Definition Directly");
+			};
+			function fun_name()
+			{
+				alert("Function Called");
+			}
+		</script>
+	</body>
+	</html>
+		

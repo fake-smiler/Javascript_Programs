@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h1>String On Encode</h1>
+	<input type="button"onclick="stern();"value="String Encode">
+	<script>
+		function stern() {
+			var s1="abc123";
+			var s2="aou";
+			var s3="`c";
+
+			alert("ABC123 : " + escape(s1));
+			alert("aou : " + escape(s2));
+			alert("`c : " + escape(s3));
+		}
+	</script>
+</body>
+</html>

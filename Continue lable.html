@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Continue Lable</h1>
+</head>
+<body>
+	<input type="button"onclick="fun_cnt();"value="Continue Lable">
+	<script>
+		function fun_cnt() {
+			var=a,b;
+
+			lable1:
+			for(a=0;a<10;a++;) {
+
+				loop2:
+				for(b=0;b<10;b++) {
+
+					if(a==3 && b==3) {
+
+						continue lable1;
+					}
+					else {
+						alert("Error");
+					}
+
+					alert("a="+a+",b="+b);
+				}
+			}
+
+		}
+	</script>
+</body>
+</html>

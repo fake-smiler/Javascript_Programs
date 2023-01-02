@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width-device-width,initial-scale=1">
+	<h1>Math.Random()</h1>
+</head>
+<body>
+	<div id="d1"></div>
+	<div id="d2"></div>
+	<input type="button"onclick="fun_rnd();"value="Generate Random Numbers">
+	<script>
+		function fun_rnd() {
+			document.getElementById("d1").innerHTML = "random 0 To 1 : " + Math.random();
+			document.getElementById("d2").innerHTML = "random 1 To 100 : " + (Math.floor(Math.random()*100)+1);
+		}
+	</script>
+</body>
+</html>
+

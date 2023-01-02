@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<script>
+	(function() {
+		a=90;
+	})()
+
+	function fun_1() {  //Previously not used var keyword for a variable,so it is a visible globally.
+		alert(a);
+	}
+</script>
+<body>
+	<input type="button"onclick="fun_1();"value="Get Value">
+</body>
+</html>

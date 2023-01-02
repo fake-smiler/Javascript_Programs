@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<p>Select a File to Load:</p>
+	<input id="fileid"type="file"onchange="loadimageFileAsURL();">
+	<br/>
+	<br/>
+	<textarea style="width:90%;height:300px;" id="txtid" style="width:640;height:240"></textarea>
+
+	<script type="text/javascript">
+		function loadimageFileAsURL() {
+			var filesSelected = document.getElementById("fileid").files;
+			if(filesSelected.length>0) {
+				var fileToLoad = filesSelected[0];
+				var fileReader = new FileReader();
+
+				fileReader.onload = function(FileLoadedEvent) {
+					var txtid=document.getElementById("txtid");
+
+					txtid.innerHTML=FileLoadedEvent.target.result;
+				};
+
+				fileReader.readAsDataURL(fileToLoad);
+
+			}
+		}
+	</script>
+</body>
+</html>

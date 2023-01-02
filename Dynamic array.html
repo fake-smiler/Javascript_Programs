@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Array Created</h1>
+</head>
+<script>
+	var arr=[];
+	function create_arr() {
+		arr=[];
+		for(i=0; i<5; i++) {
+			arr.push(i);
+		}
+			alert("Created Array");
+		}
+	
+		function view_arr() {
+			alert(arr);
+		}
+</script>
+<body>
+	<input type="button"onclick="create_arr();"value="Create Array">
+	<input type="button"onclick="view_arr();"value="View Array">
+</body>
+</html>

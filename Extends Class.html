@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Extends Class</h1>
+</head>
+<body>
+	<input type="button"onclick="call_cls();"value="Call Class Function">
+	<script>
+		function call_cls() {
+			class test1 {
+				fun_1() {
+					alert("Function Called1");
+				}
+			}
+			class test2 extends test1 {
+				fun_2() {
+					alert("Function Called2")
+				}
+			}
+			var obj1=new test2();
+			obj1.fun_1();
+			obj1.fun_2();
+
+			var obj2=new test1();
+			obj2.fun_1();
+		}
+	</script>
+</body>
+</html>

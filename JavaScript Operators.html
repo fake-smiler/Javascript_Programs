@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>JavaScript Operators</h1>
+</head>
+<body>
+	<h2>a=10 b=20 z=40 x=60 y=40 w=16</h2>
+	<input type="button"onclick="cal_opr();"value="Find Operator Usage">
+	<div id="d1"></div>
+	<script>
+		function cal_opr() {
+			var a=10;
+			var b=20;
+			var z=40;
+			var x=60;
+			var y=40;
+			var w=16;
+			var c=(a+b);
+			var d=(b-a);
+			z++;
+			x--;
+			y+=3;
+			w-=5;
+			var e=a*b;
+			var f=a/b;
+			var g=a%b;
+			var all_txt="";
+			all_txt="<br>a+b:" +c;
+			all_txt=all_txt+"<br>b-a:"+d;
+			all_txt=all_txt+"<br>z++(z=z+1):"+z;
+			all_txt=all_txt+"<br>x--(x=x-1):"+x;
+
+			all_txt=all_txt+"<br>y+=3(y=y+3):"+y;
+			all_txt=all_txt+"<br>w-=5(w=w-5):"+w;
+
+			all_txt=all_txt+"<br>a*b:"+e;
+			all_txt=all_txt+"<br>a/b:"+f;
+			all_txt=all_txt+"<br>a%b:"+g;
+			document.getElementById("d1").innerHTML = all_txt;
+		}
+	</script>
+</body>
+</html>

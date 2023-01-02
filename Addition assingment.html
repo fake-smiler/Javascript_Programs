@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+<h1>Addition Assingnment</h1>
+</head>
+<body>
+	<input type="button"onclick="simple_eg();"value="Simple Exampled">
+	<input type="button"onclick="detailed_eg();"value="Detaild Example">
+	<script>
+		function simple_eg() {
+			var a=22;
+			a+=10;//a=a+10
+			alert(a);
+		}
+
+		function detailed_eg() {
+			var str="foo";
+			var num=5;
+			var bol=true;
+
+			num+=2;
+			alert("num(5) + num(2) : " + num);
+
+			bol+=1;
+			alert("bol(true) + num(1) : " + bol);
+
+			bol=true;
+			bol+=false;
+			alert("bol(true) + bol(false) : " + bol);
+             
+           num=5;
+           num+="Test String"
+           alert("num(5) + Test str : " + num);
+
+           str+=false;
+           alert("str(foo) + bol(false) : " + str);
+
+           str="foo";
+           str+="Test string"
+           alert("str(foo) + Test string : " + str);
+		}
+	</script>
+</body>
+</html>

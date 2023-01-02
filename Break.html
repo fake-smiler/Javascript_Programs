@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Break</h1>
+</head>
+<body>
+	<input type ="button"onclick="fun_break();"value="Break">
+	<input type="button"onclick="fun_breaklable();"value="Break Lable">
+	<script>
+		function fun_break() {
+			for(i=0;i<10;i++) {
+				if(i==3) {
+					break;
+
+				}
+				alert(i);
+			
+			}
+
+		}
+
+		function fun_breaklable() {
+			block 1;
+			{
+				block 2;
+				{
+					alert(1);
+					break block 1;
+					alert(2);
+
+				}
+				aler(3);
+			}
+		}
+	</script>
+</body>
+</html>

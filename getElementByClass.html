@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1>getElementByClass</h1>
+</head>
+<body>
+	<input type="text"value="10"class='txt1'><br>
+	<input type="text"value="100"class='txt1'><br>
+	<button type="button"onclick="get_txt();">Get Valid</button>
+	<script>
+		function get_txt() {
+			var x=document.getElementsByClassName("txt1");
+			alert(x[0].value);
+			alert(x[1].value);
+
+		}
+	</script>
+</body>
+</html>

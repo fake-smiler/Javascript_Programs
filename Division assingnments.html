@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Division Assingnments</h1>
+</head>
+<body>
+	<input type="button"onclick="simple_eg();"value="Simple Example">
+	<input type="button"onclick="detailed_eg();"value="Detaile Example">
+	<script>
+		function simple_eg() {
+			var a=10;
+			a/=5;//a=a/5
+			alert(a);
+		}
+
+		function detailed_eg() {
+			var bar=5;
+			bar/=10;
+			alert("bar(5) / 10 : " + bar);
+
+			bar/="foo";
+			alert("bar(5) / str(foo) : " + bar);
+		}
+	</script>
+</body>
+</html>

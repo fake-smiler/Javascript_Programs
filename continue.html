@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Continue</h1>
+</head>
+<body>
+	<input type="button"onclick="fun_continue();"value="Continue">
+	<script>
+		function fun_continue() {
+			for (i=0;i<10;i++) {
+				if (i==3) {
+					continue;//Just Elemenate the following statement
+				}
+				alert(i);
+			}
+		}
+	</script>
+</body>
+</html>

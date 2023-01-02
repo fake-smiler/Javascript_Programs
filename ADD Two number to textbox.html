@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Add Two Number Textbox</h1>
+</head>
+<script>
+	function show_ans() {
+		var t1=document.getElementById("txt1").value;
+		var t2=document.getElementById("txt2").value;
+		var ans=parseInt(t1) + parseInt(t2);
+		document.getElementById("txt3").value=ans;
+	}
+
+	function clear_txt() {
+		document.getElementById("txt1").value="";
+		document.getElementById("txt2").value="";
+		document.getElementById("txt3").value="";
+	}
+</script>
+<body>
+	Enter the first value:
+	<br>
+	<input type="text"id="txt1">
+	<br>
+	Enter the second value:
+	<br>
+	<input type="text"id="txt2">
+	<br>
+	<input type="text"id="txt3">
+	<br>
+	<br>
+	<input type="button"onclick="show_ans();"value="Answer">
+	<br>
+	<input type="button"onclick="clear_txt();"value="Clear">
+</body>
+</html>

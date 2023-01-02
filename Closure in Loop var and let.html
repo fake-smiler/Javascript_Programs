@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Loop var and let</h1>
+</head>
+<body>
+	<input type="button"onclick="call_var();"value="Var">
+	<input type="button"onclick="call_let();"value="Let">
+	<script>
+		function call_var() {
+			for(var i=0;i<5;++i) {
+				setTimeout(function() {
+					alert(i);// output '5' 5 times
+				},100);
+			}
+		}
+
+		function call_let() {
+			for(let k=0;k<5;++k) {
+				setTimeout(function() {
+					alert(k);// output 0,1,2,3,4
+				},100);
+			}
+		}
+	</script>
+</body>
+</html>

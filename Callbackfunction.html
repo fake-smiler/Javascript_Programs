@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Callback Function</title>
+ </head>
+ <script>
+ 	const RAM = false;
+
+ 	if(RAM) {
+ 		MainFunction(Radha);
+ 	}
+
+ 	else {
+ 		MainFunction(Miku);
+ 	}
+
+ 	function MainFunction(Callback) {
+ 		Callback();
+ 	}
+
+ 	function Miku() {
+ 		console.log("Ram love for Miku");        //Callback function
+ 	}
+
+ 	function Radha() {
+ 		console.log("Ram love for Radha");       //Callback function
+ 	}
+ </script>
+ <body>
+ 	<h1>Callback Function</h1>
+ </body>
+ </html>

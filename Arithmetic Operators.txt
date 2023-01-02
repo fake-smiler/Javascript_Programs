@@ -1,0 +1,19 @@
+Operator        Description
+
+  +               Addtion
+
+  -               Subtraction
+
+  *               Multiplication
+
+  /               Division
+ 
+  %               Modules
+
+  ++              Increment
+  
+  --              Decrement
+
+  <=              Less then Or Equal to
+
+  ?               Ternary Operator       
